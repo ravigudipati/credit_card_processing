@@ -56,16 +56,18 @@ $
 
 ## Installation
 
+  git clone URL
+
   Install the gems with: bundle install
 
 
  Run the tests with: bundle exec rspec
 
 
-2. Display the usage help for the run_card_process.rb file found in the lib directory: 
+2. Run this file run_card_process.rb found in the lib directory: 
 
     ```
-      Usage Help for Card Processing
+      How to run Card Processing
 
           To run in interactive mode use this command:
               credit_card_processing/lib$ ruby run_credit_card_process.rb < ../spec/input1.txt        

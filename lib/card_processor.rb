@@ -5,7 +5,6 @@ class CardProcessor
   end
 
   def process_cards(input)
-    #byebug
     cmd, *args = input.chomp.split(' ')
     case cmd
     when 'Add'

@@ -1,7 +1,7 @@
 require './card'
 require './card_processor'
-require 'byebug'
 
+# This code runs on commandline with the input
 processor = CardProcessor.new
 
 # Read from commandline
