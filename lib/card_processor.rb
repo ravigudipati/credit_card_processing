@@ -5,6 +5,7 @@ class CardProcessor
   end
 
   def process_cards(input)
+    #byebug
     cmd, *args = input.chomp.split(' ')
     case cmd
     when 'Add'
@@ -21,7 +22,7 @@ class CardProcessor
   def generate_report
     return "No report" if @cards.empty?
 
-    @cards.each do|name,card|
+    @cards.sort.each do|name,card|
       if card == 'error'
         puts "#{name}: error"
       else
@@ -33,8 +34,8 @@ class CardProcessor
   private
 
   def add_card(name,num,limit)
-    new_card = Card.new(name,num,limit[1..-1].to_i
-    if num <= 19 && new_card.is_valid?(num)
+    new_card = Card.new(name,num,limit[1..-1].to_i)
+    if num.length <= 19 && new_card.is_valid?(num)
       @cards[name] = new_card
     else
       @cards[name] = 'error'

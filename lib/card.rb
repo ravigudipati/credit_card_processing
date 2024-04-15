@@ -24,9 +24,10 @@ class Card
     digits = num.chars.map(&:to_i)
     sum = 0
 
-    digits.revers.each_with_index do|digit, idx|
+    digits.reverse.each_with_index do|digit, idx|
       if idx.odd?
-        sum += digit*2 > 9 ? digit - 9 : digit
+        doubl = digit * 2
+        sum += doubl > 9 ? doubl - 9 : doubl
       else
         sum += digit
       end

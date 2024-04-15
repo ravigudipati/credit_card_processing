@@ -1,5 +1,6 @@
-require 'card'
-require 'card_processor'
+require './card'
+require './card_processor'
+require 'byebug'
 
 processor = CardProcessor.new
 
@@ -10,10 +11,14 @@ if ARGV.empty?
   end
 else
   file_name = ARGV.first
-  File.open(file_name, 'r') do|file|
-    file.each_line do|line|
-      processor.process_cards(line)
+  if File.exists?(file_name)
+    File.open(file_name, 'r') do|file|
+      file.each_line do|line|
+        processor.process_cards(line)
+      end
     end
+  else
+    puts "File not found"
   end
 end
 
