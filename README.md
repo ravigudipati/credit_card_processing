@@ -14,7 +14,7 @@ An implementation of the credit cards processing written in Ruby and using RSpec
   - README.md  
   - spec  
         - card_processor_spec.rb     'Card tests'
-        - input_1.txt                'Test Input File 1'
+        - input1.txt                 'Test Input File 1'
   ```
 
 ## Design
