@@ -62,14 +62,14 @@ ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
 
   Run this file run_card_process.rb found in the lib directory: 
 
-    ```
-      How to run Card Processing
+  ```
+    How to run Card Processing
 
-          To run in interactive mode use this command:
-              credit_card_processing/lib$ ruby run_credit_card_process.rb < ../spec/input1.txt        
+        To run in interactive mode use this command:
+            credit_card_processing/lib$ ruby run_credit_card_process.rb < ../spec/input1.txt        
 
-          To run the transactions listed inside a file use this command:
-              credit_card_processing/lib$ ruby run_credit_card_process.rb ../spec/input1.txt        
+        To run the transactions listed inside a file use this command:
+            credit_card_processing/lib$ ruby run_credit_card_process.rb ../spec/input1.txt        
 
-    ```
+  ```
 
