@@ -7,22 +7,21 @@ An implementation of the credit cards processing written in Ruby and using RSpec
 ## Overview
   ```
   - Gemfile  
-  - Gemfile.lock  
   - lib
-        - card.rb               'Contains the Credit Card Class'
-        - card_processor.rb     'Holds the Payment Processing and Reporting Class'
-        - run_card_processor.rb 'This is the script for running the card process'
+        - card.rb                    'Contains the Credit Card Class'
+        - card_processor.rb          'Holds the Payment Processing and Reporting Class'
+        - run_credit_card_process.rb 'This is the script for running the card process'
   - README.md  
   - spec  
-        - card_processor_spec.rb      'Card tests'
-        - input_1.txt       'Test Input File 1'
+        - card_processor_spec.rb     'Card tests'
+        - input_1.txt                'Test Input File 1'
   ```
 
 ## Design
 
 This repository uses 2 classes to handle validating credit cards and process cards for balances. The general control flow is:
 
-    run_card_processor (Input Mode: STDIN or single-file)
+    run_credit_card_process (Input Mode: STDIN or single-file)
         
         - Add     
         - Charge  
@@ -50,7 +49,6 @@ This build was tested with Ruby 2.6.3p62 installed:
 ``` 
 $ ruby -v
 ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
-$
 ```
 
 
@@ -60,11 +58,9 @@ $
 
   Install the gems with: bundle install
 
+  Run the tests with: bundle exec rspec
 
- Run the tests with: bundle exec rspec
-
-
-2. Run this file run_card_process.rb found in the lib directory: 
+  Run this file run_card_process.rb found in the lib directory: 
 
     ```
       How to run Card Processing
@@ -75,6 +71,5 @@ $
           To run the transactions listed inside a file use this command:
               credit_card_processing/lib$ ruby run_credit_card_process.rb ../spec/input1.txt        
 
-    $
     ```
 
